@@ -1,0 +1,28 @@
+[
+  {
+    "description": "请求重定向",
+    "request": {
+      "uri": "/redirect"
+    },
+    "redirectTo": "https://portal.hiido.com/index"
+  },
+  {
+    "description": "重定向到自己的网页",
+    "request": {
+      "uri": "/redirect/pathto"
+    },
+    "redirectTo": "/redirect/new"
+  },
+  {
+    "description": "这是被重定向的请求",
+    "request": {
+      "uri": "/redirect/new"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "重定向成功啦"
+    }
+  }
+]
